@@ -7,6 +7,9 @@
 body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+/* CARDS-SECTION STARTS  */
+
 .cardContainer{
     width: 350px;
     border-radius: 15px;
@@ -26,3 +29,58 @@ body{
 .imageContainer img:hover{
      transform: scale(1.1)rotate(-5deg);
 }
+.heroImage{
+    position: relative;
+    animation: mymove 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes mymove {
+    0%{
+        top: 0px;
+    }
+    50%{
+        top: 100px;
+    }
+    100%{
+        top: 0px;
+    }
+  }
+/* CARDS-SECTION ENDS  */
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767px){
+    .hero-title{
+        font-size: 28px;
+        line-height: 38px;
+        font-weight: 800;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .hero-small{
+        text-align: center;
+    }
+    .hero-texts{
+        font-size: 14px;
+        line-height: 26px;
+        text-align: center;
+    }
+    .about-title{
+        text-align: center;
+    }
+    .about-texts{
+        font-size: 14px;
+        text-align: center;
+    }
+    .cards-texts{
+        font-size: 17px;
+        text-align: center;
+    }
+    .cards-title{
+        text-align: center;
+    }
+}
+
+
+
+
